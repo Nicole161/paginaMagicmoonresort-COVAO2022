@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="200x200" href="img/Captura.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+    <title>Magic Moon Resort</title>
+  </head>
+
+  <body>
+
+    <!-- Cabecera ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="hero">
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+  
+          <img src="img/logoHotel.png" class="logo" alt="" srcset="" />
+  
+          <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="#">Habitaciones</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contactenos</a></li>
+          </ul>
+        </nav>
+  
+        <div class="content">
+          <h1>Formulario de reservas</h1>
+          <a href="index.html">Atras</a>
+        </div>
+      </div>
+  
+
+
+
+
+
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row">
+              <div class="col-50">
+                <h3>Datos personales</h3>
+                <br>
+                <label for="city"><i class="fa-solid fa-id-card"></i> Cedula</label>
+                <input type="number"id="city"name="city"placeholder="101110111"/>
+
+                <label for="fname"><i class="fa fa-user"></i> Nombre completo</label>
+                <input type="text"id="fname"name="firstname"placeholder="John M. Doe"/>
+
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="email"id="email"name="email"placeholder="john@example.com"/>
+
+                <label for="city"><i class="fa-solid fa-phone"></i> Telefono</label>
+                <input type="number"id="city"name="city"placeholder="11558799"/>
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state"><i class="fa-sharp fa-solid fa-earth-americas"></i> Pais</label>
+                    <select id="state">
+                      <option value="css">Costa Rica</option>
+                      <option value="">Panama</option>
+                      <option value="">Nicaragua</option>
+                      <option value="">Honduras</option>
+                      <option value="">El Salvador</option>
+                      <option value="">Brasil</option>
+                      <option value="">Mexico</option>
+                      <option value="">Chile</option>
+                      <option value="">Cuba</option>
+                      <option value="">EEUU</option>
+                      <option value="">Guatemala</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+
+                
+
+              </div>
+
+              <div class="col-50">
+                <h3>Reserva</h3>
+                <br>
+                <label for="date"><i class="fa-solid fa-calendar-days"></i> Check-in</label>
+                <input type="date"id="date"name="date"/>
+
+                <label for="date"><i class="fa-solid fa-calendar-days"></i> Check-out</label>
+                <input type="date"id=""name="date"/>
+                
+                <label for="date"><i class="fa-solid fa-people-group"></i> N° adultos</label>
+                <select id="date">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                  <option value="">...</option>
+                </select>
+   
+                <label for="date"><i class="fa-solid fa-children"></i> N° niños</label>
+                <select id="date">
+                  <option value="">0</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                  <option value="">...</option>
+                </select>
+
+                <label for="date"><i class="fa-solid fa-bed"></i> Tipo de habitacion</label>
+                <select id="date">
+                  <option value="">Doble</option>
+                  <option value="">Triple</option>
+                  <option value="">Ejecutiva</option>
+                  <option value="">Suite Ejecutiva</option>
+                  <option value="">Suite Superior</option>
+                </select>
+                </div>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      <!-- Pago -->
+
+        <div class="container">
+          <div class="col-50">
+            <h3>Pago</h3>
+            <br>
+            <label for="fname">Tarjetas Aceptadas</label>
+            <div class="icon-container">
+              <i class="fa-brands fa-cc-visa" style="color: navy"></i>
+              <i class="fa-brands fa-cc-amex" style="color: blue"></i>
+              <i class="fa-brands fa-cc-mastercard" style="color: red"></i>
+              <i class="fa-brands fa-cc-discover" style="color: orange"></i>
+               
+            </div>
+            <label for="cname">Nombre de la tarjeta</label>
+            <input type="text"id="cname"name="cardname"placeholder="John More Doe"/>
+
+            <label for="ccnum">Número de Tarjeta de Crédito</label>
+            <input type="number"id="ccnum"name="cardnumber"placeholder="1111-2222-3333-4444"/>
+
+            <label for="expmonth">Mes de Exp</label>
+            <input type="month"id="expmonth"name="expmonth"placeholder="Enero"/>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Año de Exp</label>
+                <input type="number"id="expyear"name="expyear"placeholder="2025"/>
+              </div>
+
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" placeholder="352" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Carrito de compras -->
+      <div class="col-25">
+        <div class="container">
+          <h4>
+            Carrito
+            <br>
+            <span class="price" style="color: black"
+              ><i class="fa fa-shopping-cart"></i> <b>4</b></span
+            >
+          </h4>
+          <p><a href="#">Cantidad de dias</a> <span class="price">$147</span></p>
+          <p><a href="#">Habitacion Suite superior</a> <span class="price">$199</span></p>
+          <p><a href="#">Cantidad de personas</a> <span class="price">$86</span></p>
+          <p><a href="#">Todo incluido</a> <span class="price">$226</span></p>
+          <hr />
+          <p>
+            Total <span class="price" style="color: black"><b>$658</b></span>
+          </p>
+        </div>
+        <label>
+          <br>
+          <input type="checkbox"checked="checked"name="sameadr"required/>
+          Acepto las condiciones
+        </label>
+        <input type="submit" value="Continuar con la reserva" class="btn" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>CopyRight &copy; 2022 MAGIC MOON RESORT. ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
